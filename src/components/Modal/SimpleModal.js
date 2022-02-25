@@ -86,7 +86,7 @@ export default function SimpleModal({ children, media_type, id }) {
                             <img src={content.backdrop_path ? (img_300 + '/' + content.backdrop_path) : (img_300 + '/' + content.poster_path)} />
                             <h2 className="transition-modal-title">{content.original_title ? content.original_title : content.name}</h2>
                             <div className="titletagline">{content.tagline}</div>
-                            <div className="transition-modal-description">r{content.overview}</div>
+                            <div className="transition-modal-description">{content.overview}</div>
                             <div>
                                 <Carousel media_type={media_type} id={id} />
                             </div>
