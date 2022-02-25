@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'center',
     },
     paper: {
-        
         width: '90%',
         height: '80%',
         backgroundColor: '#706b6b',
@@ -82,6 +81,7 @@ export default function SimpleModal({ children, media_type, id }) {
             >
                 <Fade in={open}>
                     <div className={classes.paper}>
+                        <div className='closebtn' onClick={handleClose}>X</div>
                         <div className='content__Modal'>
                             <img src={content.backdrop_path ? (img_300 + '/' + content.backdrop_path) : (img_300 + '/' + content.poster_path)} />
                             <h2 className="transition-modal-title">{content.original_title ? content.original_title : content.name}</h2>
