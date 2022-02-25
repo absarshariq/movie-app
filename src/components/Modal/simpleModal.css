@@ -1,12 +1,8 @@
  
 @media(width<550px){
-    /* .content__Modal{
-        /* display: flex;
-        align-items: center; */
-    /* } */ */
+  
     .content__Modal img{
         border-radius: 5px;
-        /* width: 80%; */
         align-items: center;
     }
     .transition-modal-description{

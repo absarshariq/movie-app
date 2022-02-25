@@ -18,8 +18,9 @@ const Trending = () => {
         window.scroll(0,0);
     }
 
-    useEffect(() => {
+    useEffect(() => { 
         fetchdata();
+        // eslint-disable-next-line
     }, [page])
 
     return (
@@ -34,7 +35,6 @@ const Trending = () => {
                 release_date={movie.release_date}
                 vote_average={movie.vote_average} 
                 />
-                
             )
             }
             </div>
