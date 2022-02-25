@@ -6,7 +6,7 @@ import axios from 'axios';
 import SingleContent from '../SingleContent';
 import { img_300 } from '../../../config/config';
 import CustomPagination from '../Pagination/CustomPagination';
-import { createMuiTheme } from '@material-ui/core';
+import { createTheme } from '@material-ui/core/styles';
 const SearchPage = () => {
     const [type, setType] = useState(0);
     const [page, setPage] = useState(0);
@@ -25,7 +25,7 @@ const SearchPage = () => {
             // setContent();
         }
     }
-    const theme = createMuiTheme({
+    const theme = createTheme({
         palette: {
             type: "dark",
             primary: {

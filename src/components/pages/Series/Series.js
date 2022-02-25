@@ -17,7 +17,7 @@ const Series = () => {
     const fetchdata = async () => {
         const { data } = await axios.get(`https://api.themoviedb.org/3/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_video=false&with_genres=${genreURL}`);
         setContent(data.results);
-        console.log(content);
+        // console.log(content);
         setPage(data.total_pages);
         window.scroll(0,0);
     }

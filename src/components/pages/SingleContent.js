@@ -3,7 +3,7 @@ import SimpleModal from '../Modal/SimpleModal';
 import './SingleContent.css'
 const SingleContent = (props) => {
     const { id, title, image, media_type, release_date, vote_average } = props;
-    console.log(id+'id');
+    // console.log(id+'id');
     return (
         <SimpleModal media_type={media_type} id={id}>
             <div className="box">
